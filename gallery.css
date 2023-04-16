@@ -1,0 +1,107 @@
+.gallery-section {
+  align-items: center;
+  display: flex;
+  background-color: #999;
+  color: aliceblue;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 2000px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo img {
+  /* max-width: 1000px; */
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  bottom: 0.3em;
+  left: 0;
+  right: 0;
+  transition: background-color 0.2s;
+}
+
+.overlay h2 {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+}
+
+.overlay p {
+    font-size: 0.8em;
+}
+
+.overlay:hover {
+  background-color: black;
+}
+
+.heading {
+  margin: 2em 0;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .overlay h2 {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+  }
+
+  .overlay p {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 640px) {
+  .heading h2 {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+
+  .heading p {
+    font-size: 1.1em;
+  }
+  
+  .overlay h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+  }
+
+  .overlay p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .photos {
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heading h2 {
+    font-size: 3em;
+  }
+
+  .heading p {
+    font-size: 1.3em;
+  }
+
+  .overlay h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+  }
+
+  .overlay p {
+    font-size: 1.2em;
+  }
+}

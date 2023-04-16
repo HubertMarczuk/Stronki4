@@ -1,0 +1,76 @@
+@import './nav.css';
+@import './banner.css';
+@import './gallery.css';
+@import './game.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 3em;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+@media (min-width: 640px) {
+  #header {
+    padding: 5px 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+

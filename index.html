@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="game.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <title>Stronka Lab4</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo"><img src="logo.png" alt="logo" /></a>
+        <nav class="main-nav" id="mainNav">
+          <button class="icon">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="nav_links">
+            <li><a href="#home">Ekran główny</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#game">Kółko i krzyżyk</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner" id="home">
+      <img class="banner-img" src="./banner.png" alt="" />
+      <div class="shadow"></div>
+      <div class="welcome">
+        <div class="title">
+          <h2>Witaj na stronie!</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="heading">
+          <h2>Przykładowa Galeria</h2>
+          <p>Przykładowa galeria screenów samochodów z różnych gier</p>
+        </div>
+        <div class="photos">
+          <div class="photo">
+            <img src="photo1.png" alt="photo1" />
+            <div class="overlay">
+              <h2>Lamborghini Gallardo</h2>
+              <p>Need for Speed Hot Pursuit Remastered</p>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="photo2.png" alt="photo2" />
+            <div class="overlay">
+              <h2>Subaru WRX STI</h2>
+              <p>Forza Horizon 5</p>
+            </div>
+          </div>
+
+          <div class="photo">
+            <img src="photo3.png" alt="photo3" />
+            <div class="overlay">
+              <h2>Ferrari F40</h2>
+              <p>Need for Speed Heat</p>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="photo4.png" alt="photo4" />
+            <div class="overlay">
+              <h2>Lamborghini Countach</h2>
+              <p>Need for Speed Unbound</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-section" id="game">
+      <div class="menu">
+        <div class="menu-opponent">
+          <p class="menu-text">Wybierz przeciwnika</p>
+          <div class="menu-buttons">
+            <button class="button button-opponent">Komputer</button>
+            <button class="button button-opponent">Druga osoba</button>
+          </div>
+        </div>
+        <div class="menu-opponent">
+          <p class="menu-text">Opcje gry</p>
+          <br />
+          <div class="menu-buttons">
+            <button id="button-back" class="button">Wróć</button>
+            <button id="button-start" class="button">Zagraj</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-game">
+        <div class="state-box">
+          <p id="state-text"></p>
+        </div>
+        <div class="game-area">
+          <div class="row">
+            <div id="field11" class="field"></div>
+            <div id="field12" class="field"></div>
+            <div id="field13" class="field"></div>
+          </div>
+          <div class="row">
+            <div id="field21" class="field"></div>
+            <div id="field22" class="field"></div>
+            <div id="field23" class="field"></div>
+          </div>
+          <div class="row">
+            <div id="field31" class="field"></div>
+            <div id="field32" class="field"></div>
+            <div id="field33" class="field"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Hubert Marczuk Lab4 &copy;</p>
+    </footer>
+  </body>
+</html>
